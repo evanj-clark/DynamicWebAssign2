@@ -8,11 +8,12 @@
   <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
 </head>
 <body>
-	<a-scene fog="type: linear; color: #AAB; far: 150; near: 0;">
+	<a-scene>
 		<a-assets>
 			<a-asset-item id="stone-pipe" src="content/stone-pipe.gltf"></a-asset-item>
 		</a-assets>
-		 <a-entity environment= "preset: volcano;"></a-entity>
+		<a-sky src="puydesancy.jpg" rotation="0 -130 0"></a-sky>
+		 <a-entity environment= "fog: 0.95"></a-entity>
 	<a-entity camera look-controls="enabled: true" orbit-controls="target: 0 1.6 -0.5; minDistance:0.5; maxDistance: 180; initialPosition: 0 1 5"></a-entity> 
 
 		<a-entity position="0 1 0" gltf-model="#stone-pipe"></a-entity>

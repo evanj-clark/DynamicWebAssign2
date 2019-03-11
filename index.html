@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>assign 2</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/stylesheet.css">
-	  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-  <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+    <title>Smoking Pipe</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
 </head>
+
 <body>
 
-<div class="model-info">
-			<h1 class="model-info__title">Smoking Pipe</h1>
-			<p class="model-info__meta">Made by Plains Peoples; Made by Blackfoot</p>
-			<p class="model-info__date">1882</p>
-			<p class="model-info__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="model-info">
+        <h1 class="model-info__title">Smoking Pipe</h1>
+        <p class="model-info__meta">Made by Plains Peoples; Made by Blackfoot</p>
+        <p class="model-info__date">1882</p>
+        <p class="model-info__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-		</div>
+    </div>
+    <a-scene fog="type: exponential; density:0.15;">
+        <a-assets>
+            <a-asset-item id="stone-pipe" src="content/stone-pipe.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity light="type: directional; color: #FFF; intensity: 0.5" position="-1 2 3"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 1.0" position="0.5 1 1"></a-entity>
+        <a-entity environment="preset: default; fog:1; ground:canyon; groundColor:#000000; groundColor2:#222222; groundTexture:walkernoise; skyType:gradient; skyColor:#6b818e;"></a-entity>
+        <a-entity camera look-controls="enabled: true" orbit-controls="target: 0 1.6 -0.5; minDistance:0.5; maxDistance: 180; initialPosition: 0 1 5"></a-entity>
 
-
-
-	<a-scene fog="type: exponential; density:0.15;">
-		<a-assets>
-			<a-asset-item id="stone-pipe" src="content/stone-pipe.gltf"></a-asset-item>
-		</a-assets>
-		 <a-entity environment= "preset: default; fog:1; ground:canyon; groundColor:#000000; groundColor2:#222222; groundTexture:walkernoise; skyType:gradient; skyColor:#6b818e;"></a-entity>
-	<a-entity camera look-controls="enabled: true" orbit-controls="target: 0 1.6 -0.5; minDistance:0.5; maxDistance: 180; initialPosition: 0 1 5"></a-entity> 
-
-		<a-entity position="0 1.5 0" gltf-model="#stone-pipe"></a-entity>
-	</a-scene>
-	<script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
-	<!-- <script src="js/three.min.js"></script>
+        <a-entity position="0 2.5 0" gltf-model="#stone-pipe" scale="2 2 2"></a-entity>
+    </a-scene>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <!-- <script src="js/three.min.js"></script>
 	<script src="js/GLTFLoader.js"></script>
 	<script src="js/scripts.js"></script> -->
 </body>
+
 </html>

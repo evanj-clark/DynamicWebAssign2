@@ -6,26 +6,45 @@ h1 {
 	font-family: AR JULIAN; 
 	text-align: center;
 	line-height: 20px;
-	font-size: 50px;
+	font-size: 80px;
+}
+
+h2, h3, h4 {
+  font-family: AR JULIAN; 
+  text-align: center;
+  line-height: 5px;
+  font-size: 25px;
+}
+
+h5 {
+   font-family: AR JULIAN; 
+   font-size: 50px;
 }
 
 p {
-	font-family: sans-serif;
+  
+	font-family: AR JULIAN;
 	text-align: center;
 }
-
-
 
 
 .model-info {
 	position: absolute;
 	z-index: 50;
 	width: 30%;
-	left: 60vw;
+	left: 35vw;
 	top: 15vw;
 	background-color: rgb(185, 202, 222, 0.3);
-	padding: 20px;
+	padding: 50px;
 
+}
+
+.model-title {
+  position: absolute;
+  z-index: 50;
+  width: 30%;
+  left: 5vw;
+  top: 1vw;
 }
 
 
@@ -35,12 +54,12 @@ p {
   background-color: rgb(185, 202, 222, 0.3);
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 28px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  left: 85vw;
+  left: 1vw;
   top: 46vw;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smoking Pipe</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+</head>
+<body>
+
+<a href="index.html">
+	<button class="button infobutton">OBJECT</button>
+
+</a>
+
+<div class="model-info">
+			<h1 class="model-info__title">Smoking Pipe</h1>
+			<h2 class="model-info__period">Made by Blackfoot</h2>
+			<h3 class="model-info__meta">Period: Prehistoric</h3>
+			<h4 class="model-info__date">Acquisition Date: 1882</h4>
+			<p class="model-info__desc">The smoking pipe is made of black limestone and it has a
+			zig-zag decoration. The zig-zag pattern can be represented as mountains. The pipe was funded by Christy Fund and was purchased from William Wareham in Britain. The pipe was excavated in Marietta, USA.</p>
+		</div>
+	<a-scene fog="type: exponential; density:0.15;">
+		<a-assets>
+			<a-asset-item id="stone-pipe" src="content/stone-pipe.gltf"></a-asset-item>
+		</a-assets>
+		<a-entity light="type: directional: color: #FFF: intensity:0.5" position "-1 2 3"></a-entity>
+		<a-entity light="type: directional: color: #FFF: intensity:0.5" position "0.5 1 1"></a-entity>
+		 <a-entity environment= "preset: default; fog:1; ground:canyon; groundColor:#000000; groundColor2:#222222; groundTexture:walkernoise; skyType:gradient; skyColor:#6b818e;"></a-entity>
+	<a-entity camera position = "0 2 0;"  ></a-entity> 
+	</a-scene>
+	<script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+</body>
+</html>

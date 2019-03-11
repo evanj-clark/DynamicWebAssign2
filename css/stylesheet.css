@@ -4,21 +4,56 @@
 
 h1 {
 	font-family: AR JULIAN; 
-	background-color: #f8b627;
 	text-align: center;
+	line-height: 20px;
+	font-size: 50px;
 }
 
 p {
 	font-family: sans-serif;
-	text-align: right;
+	text-align: center;
 }
+
+
+
 
 .model-info {
 	position: absolute;
 	z-index: 50;
 	width: 30%;
 	left: 60vw;
-	top: 10vw;
-/*	padding: 20px;*/
+	top: 15vw;
+	background-color: rgb(185, 202, 222, 0.3);
+	padding: 20px;
 
+}
+
+
+.infobutton {
+  position: absolute;
+  z-index: 50;
+  background-color: rgb(185, 202, 222, 0.3);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  left: 85vw;
+  top: 46vw;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.infobutton {
+  background-color: black;
+  color: white; 
+  border: 2px solid white;
+}
+
+.infobutton:hover {
+  background-color: rgb(185, 202, 222);
+  color: black;
 }
